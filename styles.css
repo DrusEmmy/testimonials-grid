@@ -63,6 +63,7 @@ article p {
 
 #card-1 {
   background-color: #7541c8;
+  position: relative;
 }
 
 #card-1 header img {
@@ -77,6 +78,7 @@ article p {
 #card-5 {
   background-color: #ffffff;
   color: #48556a;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 #card-4 {
@@ -96,6 +98,19 @@ article p {
   #card-4,
   #card-5 {
     grid-column: span 2;
+  }
+
+  article h3 {
+    z-index: 2;
+  }
+
+  #card-1::before {
+    content: url(./images/bg-pattern-quotation.svg);
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    opacity: 0.75;
+    z-index: 1;
   }
 }
 
